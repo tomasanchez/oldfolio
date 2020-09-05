@@ -11,16 +11,17 @@ body {
     margin-right: auto;
     margin-left: auto;
     font: Tahoma;
-    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
 }
 
 /*  Navigation Bar  */
 nav{
     display: flex;
+    justify-content: space-around;
     align-content: center;
     min-height: 8vh;
     background: black;
-    color: white; 
+    color: rgba(255, 255, 255, 0.856);
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
 }
 
 nav ul{
@@ -43,6 +44,7 @@ label.logo{
     align-content: flex-end;
     font-size: 35px;
     font-size-adjust: inherit;
+    letter-spacing: 4px;
     font-weight: lighter;
     line-height: 80px;
     padding: 0 100px;
