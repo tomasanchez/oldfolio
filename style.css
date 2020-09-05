@@ -1,23 +1,51 @@
 *{
-    padding: 0;
-
+    padding: 0px;
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+    
 }
 
 
 body {
     margin-right: auto;
     margin-left: auto;
-
+    font: Tahoma;
     font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
 }
 
-
+/*  Navigation Bar  */
 nav{
+    display: flex;
+    align-content: center;
+    min-height: 8vh;
     background: black;
     color: white; 
+}
+
+nav ul{
+    float: left;
+    margin-left: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: white;
+}
+
+label.logo{
+    float: left;
+    color:whitesmoke;
+    align-content: flex-end;
+    font-size: 35px;
+    font-size-adjust: inherit;
+    font-weight: lighter;
+    line-height: 80px;
+    padding: 0 100px;
 }
 
 h1, h2{
