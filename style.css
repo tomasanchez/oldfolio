@@ -1,9 +1,23 @@
-body {
-    color: white;
-    background: black;
+*{
+    padding: 0;
 
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+
+body {
     margin-right: auto;
     margin-left: auto;
+
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+
+nav{
+    background: black;
+    color: white; 
 }
 
 h1, h2{
