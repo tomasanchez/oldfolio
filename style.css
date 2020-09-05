@@ -17,39 +17,33 @@ body {
 nav{
     display: flex;
     justify-content: space-around;
-    align-content: center;
+    align-items: center;
     min-height: 8vh;
     background: black;
-    color: rgba(255, 255, 255, 0.856);
     font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
 }
 
-nav ul{
-    float: left;
-    margin-left: 20px;
-}
-
-nav ul li{
-    display: inline-block;
-    margin: 0 5px;
-}
-
-nav ul li a{
-    color: white;
-}
-
-label.logo{
+.logo{
     float: left;
     color:whitesmoke;
     align-content: flex-end;
-    font-size: 35px;
+    font-size: 22px;
     font-size-adjust: inherit;
     letter-spacing: 4px;
     font-weight: lighter;
+    text-transform: uppercase;
     line-height: 80px;
     padding: 0 100px;
 }
 
-h1, h2{
-    text-align: center;
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+
+.nav-links a{
+    color: whitesmoke;
+    letter-spacing: 2px;
+    font-weight: lighter;
 }
