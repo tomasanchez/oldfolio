@@ -1,6 +1,5 @@
 *{
     margin-top: 0px;
-    padding: 0px;
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
@@ -32,7 +31,6 @@ nav{
     font-size: 22px;
     letter-spacing: 4px;
     line-height: 80px;
-    padding: 0 100px;
 }
 
 .nav-links{
@@ -44,20 +42,23 @@ nav{
 .nav-links a{
     color: whitesmoke;
     letter-spacing: 2px;
+    padding-bottom: 15px;
     font-weight: lighter;
 }
 
 .sbutton{
+    padding-bottom: 15px;
     cursor: pointer;
     display: none;
 }
 
 .sbutton div{
-    width: 22px;
-    height: 2px;
+    line-height: 80px;
+    width: 25px;
+    height: 1px;
     background-color: whitesmoke;
     flex-direction: column;
-    margin-right: 5px;
+    margin: 4px;
 }
 
 @media screen and (max-width: 1024px){
@@ -105,4 +106,20 @@ nav{
         opacity: 1;
         transform: translateX(0px);
     }
+}
+
+main{
+    margin-top: 10vh;
+    text-align: center;
+}
+
+footer{
+    color: whitesmoke;
+    font-weight: lighter;
+    background-color: rgb(46, 43, 43);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    line-height: 7vh;
+    text-align: center;
 }
