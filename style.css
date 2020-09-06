@@ -19,6 +19,7 @@ nav{
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
+    letter-spacing: 2px;
     background: black;
     font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
 }
@@ -26,12 +27,10 @@ nav{
 .logo{
     float: left;
     color:whitesmoke;
-    align-content: flex-end;
-    font-size: 22px;
-    font-size-adjust: inherit;
-    letter-spacing: 4px;
     font-weight: lighter;
     text-transform: uppercase;
+    font-size: 22px;
+    letter-spacing: 4px;
     line-height: 80px;
     padding: 0 100px;
 }
@@ -46,4 +45,64 @@ nav{
     color: whitesmoke;
     letter-spacing: 2px;
     font-weight: lighter;
+}
+
+.sbutton{
+    cursor: pointer;
+    display: none;
+}
+
+.sbutton div{
+    width: 22px;
+    height: 2px;
+    background-color: whitesmoke;
+    flex-direction: column;
+    margin-right: 5px;
+}
+
+@media screen and (max-width: 1024px){
+    .nav-links{
+        width: 52%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    body{
+        overflow-x: hidden;
+    }
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background: black;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        line-height: 5vh;
+        transform: translateX(100%);
+        transition: transform 0.4s ease-in;
+    }
+    .nav-links li{
+        opacity: 0;
+    }
+    .sbutton{
+        display: block;
+    }
+}
+
+.nav-active{
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
 }
