@@ -21,4 +21,28 @@ const navSlide = () => {
     
 }
 
-navSlide();
+const brandShow = () => {
+    ScrollReveal().reveal('.navbar-brand',{
+      delay: 50,
+      duration: 2000,
+      origin: 'left',
+      distance: '100px'
+    });
+}
+
+
+
+navBarAnimate = () => {
+    const navLinks = document.querySelectorAll('.navbar-nav li');
+
+    navLinks.forEach( (link, index) => {
+
+    });
+}
+
+const onInit = () => {
+    brandShow();
+    navBarAnimate();
+}
+
+onInit();
