@@ -1,3 +1,14 @@
+*{
+    text-decoration: none;
+}
+
+a {
+    color: black;
+}
+a:hover{
+    color: black;
+}
+
 body{
    font-family: "Nunito Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
@@ -18,6 +29,6 @@ html.sr .load-hidden {
     size: 25px !important;
 }
 
-.navbar-item{
+.nav-link{
     size: 0.76rem !important;
 }

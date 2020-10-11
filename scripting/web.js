@@ -33,15 +33,21 @@ const brandShow = () => {
 
 
 navBarAnimate = () => {
+    brandShow();
+
     const navLinks = document.querySelectorAll('.navbar-nav li');
 
     navLinks.forEach( (link, index) => {
-
+        link.style.opacity = 0;
+        if(link.style.animation){
+            link.style.animation = '';
+        }else{
+        link.style.animation = `navLinkFade 1.5s ease forwards ${index/4 + 0.3}s`;
+        }
     });
 }
 
 const onInit = () => {
-    brandShow();
     navBarAnimate();
 }
 
