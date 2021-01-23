@@ -1,100 +1,192 @@
 <!DOCTYPE html>
 
 <html lang="en">
-
-<head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-sacle=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-sacle=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <script src="https://unpkg.com/scrollreveal"></script>
-    <link rel='stylesheet' type='text/css' href="css/style.css">
-    <link rel='stylesheet' type='text/css' href="css/bootstrap.min.css">
-    <title>Tomás A. Sánchez</title>  
-</head>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <title>Tomás A. Sánchez</title>
+  </head>
 
-<body class="d-flex flex-column min-vh-100">
-  <!-- Navigation Bar -->
+  <body class="d-flex flex-column min-vh-100">
+    <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
-        <a class="navbar-brand load-hidden" href="#">Sánchez</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarColor01">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Connect</a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="https://github.com/tomasanchez" target="_blank">GitHub</a>
-                <a class="dropdown-item" href="https://www.linkedin.com/in/tbsanchez/" target="_blank">LinkedIn</a>
-                <a class="dropdown-item" href="https://instagram.com/tomasbsanchez" target="_blank">Instagram</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="mailto:imtomasanchez@gmail.com">eMail</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="files/cv.pdf" target="_blank">CV/Résumé</a>
-            </li>
-          </ul>
-        </div>
+      <a class="navbar-brand load-hidden" href="#">Sánchez</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarColor01"
+        aria-controls="navbarColor01"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              data-toggle="dropdown"
+              href="#"
+              role="button"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >Connect</a
+            >
+            <div class="dropdown-menu">
+              <a
+                class="dropdown-item"
+                href="https://github.com/tomasanchez"
+                target="_blank"
+                >GitHub</a
+              >
+              <a
+                class="dropdown-item"
+                href="https://www.linkedin.com/in/tbsanchez/"
+                target="_blank"
+                >LinkedIn</a
+              >
+              <a
+                class="dropdown-item"
+                href="https://instagram.com/tomasbsanchez"
+                target="_blank"
+                >Instagram</a
+              >
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="mailto:imtomasanchez@gmail.com"
+                >eMail</a
+              >
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="files/cv.pdf" target="_blank"
+              >CV/Résumé</a
+            >
+          </li>
+        </ul>
+      </div>
     </nav>
-      <!-- Body -->
+    <!-- Body -->
     <main>
       <section id="Projects">
         <div class="jumbotron">
           <h1 class="display-4">Projects</h1>
-          <span class="badge badge-dark">New</span>
-          <div class="card mx-auto shadow p-3 mb-5 bg-white rounded" style="width: 15rem;">
-            <img class="card-img-top" src="projects/my_gym/images/mygym_icon.png" alt="My Gym - Icon">
-  
+          <!-- My Gym App -->
+          <div
+            class="card mx-auto shadow p-3 mb-5 bg-white rounded"
+            style="width: 15rem"
+          >
+            <img
+              class="card-img-top"
+              src="projects/my_gym/images/mygym_icon.png"
+              alt="My Gym - Icon"
+            />
+
             <div class="card-body">
               <h5 class="card-title">My Gym</h5>
-              <p class="card-text">This is a SAPUI5 Custom Application. Designed to manage clients and subscriptions in a sport center.</p>
-              <a role="button" class="btn btn-primary" href="projects/my_gym/mygym.html" aria-disabled="true">Learn More</a>
+              <p class="card-text">
+                This is a SAPUI5 Custom Application. Designed to manage clients
+                and subscriptions in a sport center.
+                <a href="https://github.com/tomasanchez/gymapp" target="_blank"
+                  >View Code</a
+                >
+              </p>
+              <a
+                role="button"
+                class="btn btn-primary"
+                href="projects/my_gym/mygym.html"
+                aria-disabled="true"
+                >Learn More</a
+              >
             </div>
-  
           </div>
-          <hr class="my-4">
+          <!-- Covid-19 Dashboard -->
+          <span class="badge badge-dark">New</span>
+          <div
+            class="card mx-auto shadow p-3 mb-5 bg-white rounded"
+            style="width: 15rem"
+          >
+            <img
+              class="card-img-top"
+              src="projects/covid_dashboard/images/covid_dashboard_logo.png"
+              alt="Covid-19 Dashboard - Icon"
+            />
+            <div class="card-body">
+              <h5 class="card-title">COVID-19 Dashboard</h5>
+              <p class="card-text">
+                This is a React JS application using UI5 web components for
+                react. Make your own conclusions about COVID-19 around the
+                globe.
+                <a href="https://github.com/tomasanchez/covid19" target="_blank"
+                  >View Code</a
+                >
+              </p>
+              <button
+                role="button"
+                class="btn btn-primary"
+                aria-disabled="true"
+                disabled
+              >
+                Coming Soon
+              </button>
+            </div>
+          </div>
+          <hr class="my-4" />
           <p>I'm working on new projects!.</p>
         </div>
       </section>
-     
-      <div class="container">
-        <h1>
 
-        </h1>
+      <div class="container">
+        <h1></h1>
       </div>
     </main>
 
     <!-- Footer -->
-    <footer class="mt-auto font-small mdb-color lighten-3 pt-4" style="margin-bottom: 1em;">
-
+    <footer
+      class="mt-auto font-small mdb-color lighten-3 pt-4"
+      style="margin-bottom: 1em"
+    >
       <!-- Footer Links -->
       <div class="container text-center text-md-left">
-
         <!-- Grid row -->
         <div class="row">
-
           <!-- Grid column -->
           <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
             <!-- Content -->
-            <h5 class="font-weight-bold text-uppercase mb-4" style="border-top-style: solid;margin-top: 7.5px;border-top-width: 0px;">About this page</h5>
-            <p>This page was created as a project. Its objective is to learn more about HTML5, JavaScript using Bootstrap.
-              Please, feel free to send any feedback.
+            <h5
+              class="font-weight-bold text-uppercase mb-4"
+              style="
+                border-top-style: solid;
+                margin-top: 7.5px;
+                border-top-width: 0px;
+              "
+            >
+              About this page
+            </h5>
+            <p>
+              This page was created as a project. Its objective is to learn more
+              about HTML5, JavaScript using Bootstrap. Please, feel free to send
+              any feedback.
             </p>
-
           </div>
 
-          <hr class="clearfix w-100 d-md-none">
+          <hr class="clearfix w-100 d-md-none" />
 
           <!-- Grid column -->
           <div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
-
             <!-- Links -->
             <h5 class="font-weight-bold text-uppercase mb-4">HOME</h5>
 
@@ -115,75 +207,117 @@
                 </p>
               </li>
             </ul>
-
           </div>
           <!-- Grid column -->
 
-          <hr class="clearfix w-100 d-md-none">
+          <hr class="clearfix w-100 d-md-none" />
 
           <!-- Grid column -->
           <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
-
             <!-- Contact details -->
             <h5 class="font-weight-bold text-uppercase mb-4">Address</h5>
 
             <ul class="list-unstyled">
               <li>
-                <p>
-                  <i></i>Buenos Aires, Argentina</p>
+                <p><i></i>Buenos Aires, Argentina</p>
               </li>
               <li>
                 <p>
-                  <i></i><a href="mailto:tosanchez@est.frba.utn.edu.ar">Send Mail</a></p>
+                  <i></i
+                  ><a href="mailto:tosanchez@frba.utn.edu.ar">Send Mail</a>
+                </p>
               </li>
               <li>
-                <p>
-                  <i></i><a href="tel:+5491140934751">Phone Contact</a></p>
+                <p><i></i><a href="tel:+5491140934751">Phone Contact</a></p>
               </li>
             </ul>
-
           </div>
           <!-- Grid column -->
 
-          <hr class="clearfix w-100 d-md-none">
+          <hr class="clearfix w-100 d-md-none" />
 
           <!-- Grid column -->
           <div class="col-md-2 col-lg-2 text-center mx-auto my-4">
-
             <!-- Social buttons -->
-            <h5 class="font-weight-bold text-uppercase mb-4">Connect With Me</h5>
+            <h5 class="font-weight-bold text-uppercase mb-4">
+              Connect With Me
+            </h5>
 
             <!-- Github -->
-            <a href="https://github.com/tomasanchez" target="_blank"  style="text-decoration: none;"/>
-            <img class="rounded" alt="Tomas Sanchez | GitHub" width="25px" src="https://simpleicons.org/icons/github.svg" />
+            <a
+              href="https://github.com/tomasanchez"
+              target="_blank"
+              style="text-decoration: none"
+            />
+            <img
+              class="rounded"
+              alt="Tomas Sanchez | GitHub"
+              width="25px"
+              src="https://simpleicons.org/icons/github.svg"
+            />
             <!-- Linked In +-->
-            <a href="https://www.linkedin.com/in/tbsanchez/" target="_blank"  style="text-decoration: none;"/>
-            <img class="rounded" alt="Tomas Sanchez | Linked In" width="25px" src="https://simpleicons.org/icons/linkedin.svg" />
+            <a
+              href="https://www.linkedin.com/in/tbsanchez/"
+              target="_blank"
+              style="text-decoration: none"
+            />
+            <img
+              class="rounded"
+              alt="Tomas Sanchez | Linked In"
+              width="25px"
+              src="https://simpleicons.org/icons/linkedin.svg"
+            />
             <!-- Whatsapp -->
-            <a href="https://wa.me/5491140934751?text=Hola!%20Conseguí%20tu%20número%20desde%20tu%20portfolio." target="_blank"  style="text-decoration: none;"/>
-            <img class="rounded" alt="Tomas Sanchez | Whatsapp " width="25px" src="https://simpleicons.org/icons/whatsapp.svg" />
+            <a
+              href="https://wa.me/5491140934751?text=Hola!%20Conseguí%20tu%20número%20desde%20tu%20portfolio."
+              target="_blank"
+              style="text-decoration: none"
+            />
+            <img
+              class="rounded"
+              alt="Tomas Sanchez | Whatsapp "
+              width="25px"
+              src="https://simpleicons.org/icons/whatsapp.svg"
+            />
             <!-- Instagram -->
-            <a href="https://www.instagram.com/tomasbsanchez/" target="_blank"  style="text-decoration: none;"/>
-            <img class="rounded" alt="Tomas Sanchez | Instagram" width="25px" src="https://simpleicons.org/icons/instagram.svg"/>
+            <a
+              href="https://www.instagram.com/tomasbsanchez/"
+              target="_blank"
+              style="text-decoration: none"
+            />
+            <img
+              class="rounded"
+              alt="Tomas Sanchez | Instagram"
+              width="25px"
+              src="https://simpleicons.org/icons/instagram.svg"
+            />
             <!-- VSCO -->
-            <a href="https://vsco.co/tomasbsanchez/gallery" target="_blank" style="text-decoration: none;"/>
-            <img class="rounded" alt="Tomas Sanchez | Instagram" width="25px" src="https://simpleicons.org/icons/vsco.svg"/>
+            <a
+              href="https://vsco.co/tomasbsanchez/gallery"
+              target="_blank"
+              style="text-decoration: none"
+            />
+            <img
+              class="rounded"
+              alt="Tomas Sanchez | Instagram"
+              width="25px"
+              src="https://simpleicons.org/icons/vsco.svg"
+            />
           </div>
           <!-- Grid column -->
-          <hr class="clearfix w-100 d-md-none">
-
+          <hr class="clearfix w-100 d-md-none" />
         </div>
         <!-- Grid row -->
-
       </div>
       <!-- Footer Links -->
 
       <!-- Copyright -->
       <div class="footer-copyright text-center py-3">
-        <a href="#!"  style="text-decoration: none;">Copyright © 2020 Tomás Agustín Sánchez</a>
+        <a href="#!" style="text-decoration: none"
+          >Copyright © 2020 Tomás Agustín Sánchez</a
+        >
       </div>
       <!-- Copyright -->
-
     </footer>
     <!-- Footer -->
 
@@ -191,12 +325,20 @@
     <script src="scripting/web.js"></script>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-
-
-
-</body>
-
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
